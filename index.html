@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />      
+</head>
+
+<body>
+    <!-- ############# wrapper start ############# -->
+    <div class="wrapper">
+
+        <div style="overflow-x:auto;">
+            <table class="common_table">
+                <thead>
+                    <tr>
+                        <th class="btn_col"><img src="images/add_remove.png" /></th>
+                        <th class="code_col">Product Code</th>
+                        <th>Product Name</th>
+                        <th class="data_col">Stock</th>
+                        <th class="data_col">Vendor</th>
+                        <th class="short_col">Status</th>
+                        <th class="data_col">Client</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="id" class="template_row">
+                        <td class="controls">
+                            <a href="#" class="list_cancel" title="Delete Row"><i class="fa fa-remove"></i></a>
+                        </td>
+                        <td><input type="text" class="form-input" id="productcode" name="" value=""/></td>
+                        <td><input type="text" class="form-input long" id="productname" name="" value=""/></td>
+                        <td><input type="text" class="form-input" id="stock" name="" value=""/></td>
+                        <td><input type="text" class="form-input" id="vendor" name="" value=""/></td>
+                        <td>
+                            <select name="select" id="selectID" class="form-input label">
+                                <option value=""></option>
+                                <option value="green" class="green">Success</option>
+                                <option value="red" class="red">Wrong</option>
+                                <option value="orange" class="orange">Error</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="form-input" id="client" name="" value=""/></td>
+                    </tr>
+                    <tr class="no_entries_row">
+                        <td colspan="7">No Entries</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="#" class="list_add"><span><i class="fa fa-plus"></i></span> Add one row</a>
+
+        <br class="clear" />
+
+        <!-- ############# save controls start ############# -->
+        <div class="action_btn">
+            <input name="submit" class="action_btn submit" type="submit" value="Save"/>
+            <input name="submit" class="action_btn cancel" type="submit" value="Cancel"/>
+
+            <div class="popup">
+                <p>Saved successfully!</p>
+            </div>
+        </div>
+        <!-- ############# save controls End ############# -->
+        
+    </div><!-- ############# wrapper end ############# -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
